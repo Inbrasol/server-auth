@@ -100,7 +100,6 @@ class ResUser(models.Model):
                     ]
                 )
             )
-
             if token:
                 return
             raise AccessDenied() from None

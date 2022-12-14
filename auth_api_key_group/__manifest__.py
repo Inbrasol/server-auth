@@ -1,4 +1,4 @@
-# Copyright 2021 Camptocamp SA
+# Copyright 2021 Camptcamp SA
 # @author: Simone Orsi <simone.orsi@camptocamp.com>
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
@@ -10,11 +10,11 @@ Allow grouping API keys together.
 Grouping per se does nothing. This feature is supposed to be used by other modules
 to limit access to services or records based on groups of keys.
     """,
-    "version": "14.0.1.1.1",
-    "development_status": "Beta",
+    "version": "15.0.1.0.0",
+    "development_status": "Alpha",
     "license": "LGPL-3",
     "website": "https://github.com/OCA/server-auth",
-    "author": "Camptocamp,Odoo Community Association (OCA)",
+    "author": "Camptcamp,Odoo Community Association (OCA)",
     "maintainers": ["simahawk"],
     "depends": ["auth_api_key"],
     "data": [

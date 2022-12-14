@@ -4,34 +4,21 @@ with open('VERSION.txt', 'r') as f:
     version = f.read().strip()
 
 setuptools.setup(
-    name="odoo14-addons-oca-server-auth",
+    name="odoo-addons-oca-server-auth",
     description="Meta package for oca-server-auth Odoo addons",
     version=version,
     install_requires=[
-        'odoo14-addon-auth_admin_passkey',
-        'odoo14-addon-auth_api_key',
-        'odoo14-addon-auth_api_key_group',
-        'odoo14-addon-auth_api_key_server_env',
-        'odoo14-addon-auth_dynamic_groups',
-        'odoo14-addon-auth_jwt',
-        'odoo14-addon-auth_jwt_demo',
-        'odoo14-addon-auth_ldaps',
-        'odoo14-addon-auth_oidc',
-        'odoo14-addon-auth_saml',
-        'odoo14-addon-auth_session_timeout',
-        'odoo14-addon-auth_signup_verify_email',
-        'odoo14-addon-auth_user_case_insensitive',
-        'odoo14-addon-password_security',
-        'odoo14-addon-user_log_view',
-        'odoo14-addon-users_ldap_groups',
-        'odoo14-addon-users_ldap_mail',
-        'odoo14-addon-users_ldap_populate',
-        'odoo14-addon-vault',
-        'odoo14-addon-vault_share',
+        'odoo-addon-auth_api_key>=15.0dev,<15.1dev',
+        'odoo-addon-auth_api_key_group>=15.0dev,<15.1dev',
+        'odoo-addon-auth_api_key_server_env>=15.0dev,<15.1dev',
+        'odoo-addon-auth_saml>=15.0dev,<15.1dev',
+        'odoo-addon-auth_session_timeout>=15.0dev,<15.1dev',
+        'odoo-addon-auth_signup_verify_email>=15.0dev,<15.1dev',
+        'odoo-addon-auth_user_case_insensitive>=15.0dev,<15.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',
         'Framework :: Odoo',
-        'Framework :: Odoo :: 14.0',
+        'Framework :: Odoo :: 15.0',
     ]
 )

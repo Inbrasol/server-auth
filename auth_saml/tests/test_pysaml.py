@@ -250,7 +250,7 @@ class TestPySaml(HttpCase):
         )
         # Assert that the user password can not be set
         with self.assertRaises(ValidationError):
-            user.password = "New+Passw000rd"
+            user.password = "new password"
 
     def test_disallow_user_password(self):
         """Test that existing user password is deleted when adding an SAML provider when
